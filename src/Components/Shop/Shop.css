@@ -1,0 +1,11 @@
+.shopping-section {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.product-section {
+  border-right: 2px solid #d3d3d3;
+}
+.cart-section {
+  margin: 5px;
+}
