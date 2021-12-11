@@ -1,0 +1,8 @@
+.product-list {
+  display: flex;
+  border-bottom: 2px solid #d3d3d3;
+}
+
+.product-description {
+  margin: 10px;
+}
