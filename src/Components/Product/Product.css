@@ -1,8 +1,16 @@
 .product-list {
   display: flex;
   border-bottom: 2px solid #d3d3d3;
+  align-items: center;
 }
 
 .product-description {
   margin: 10px;
+}
+
+.regular-button {
+  background-color: goldenrod;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 1px solid white;
 }
