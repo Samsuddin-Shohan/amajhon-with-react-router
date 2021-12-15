@@ -9,3 +9,13 @@
 .cart-section {
   margin: 5px;
 }
+
+.search-container {
+  background-color: rgba(0, 0, 0, 0.583);
+  padding: 15px;
+  text-align: center;
+}
+.search-container input {
+  width: 50%;
+  padding: 5px;
+}
