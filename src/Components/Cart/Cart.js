@@ -16,13 +16,15 @@ const Cart = (props) => {
     let tax = total*.05;
     let shipping = total*.02;
     let orderTotal = total + tax + shipping;
+    const tempTotalTotalQuantity = totalQantity;
+    totalQantity = 0;
 
 
     return (
         <div>
                 <div className='text-center mt-2'>
                     <h3>Order Summary</h3>
-                    <p>Items Ordered: {totalQantity}</p>
+                    <p>Items Ordered: {tempTotalTotalQuantity}</p>
                 </div>
                 <div className=''>
                 <div className='row justify-content-center align-items-center
