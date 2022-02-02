@@ -36,7 +36,7 @@ const Cart = (props) => {
                         <p className='text-danger fw-bolder fs-4'>Orders Totals:</p>
                     </div>
                     <div className='col '>
-                       <p>{props.product.price || '0'}</p>
+                       <p>{cart.length}</p>
                        <p>{shipping.toFixed(2)}</p>
                        <p>{total.toFixed(2)}</p>
                        <p>{tax.toFixed(2)}</p>

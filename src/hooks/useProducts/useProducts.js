@@ -10,6 +10,6 @@ const useProducts = () => {
             
         });
     },[]);
-    return [products];
+    return [products,setProducts];
 }
 export default useProducts;

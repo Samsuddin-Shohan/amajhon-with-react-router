@@ -25,7 +25,7 @@ const Product = (props) => {
                     initialRating={star} 
                     emptySymbol="far fa-star icon-color" 
                     fullSymbol="fas fa-star icon-color"
-                    readonly
+                    
                 />
                 <br />
                 <button 
