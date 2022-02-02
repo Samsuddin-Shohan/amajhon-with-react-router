@@ -11,7 +11,16 @@ const Shop = (props) => {
     const [product, setProduct] = useState({});
     const[displayProducts, setDisplayProducts] = useState([]);
     const handleAddToCart = (product) =>{
-        const newCart = [...cart, product];
+        let newCart = [];
+        const cartKeys = cart.map(item => item.key )
+        if(cartKeys.includes(product.key)){
+            product.quantity++;
+            newCart = [...cart];
+        }
+        else{
+            newCart = [...cart, product];
+        }
+       
         setCart(newCart);
         setProduct(product);
         addToDb(product.key);
@@ -27,7 +36,7 @@ const Shop = (props) => {
     },[]);
 
     useEffect(() =>{       
-        if(products.length){
+        if(products.length!==0){
             const savedCart = getStoredCart();
             const storedCart = [];
             for(const key in savedCart){
