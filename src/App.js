@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import {BrowserRouter as Router , Route, Switch} from 'react-router-dom'
 import Review from './Components/Review/Review';
 import Inventory from './Components/Inventory/Inventory';
+import PlaceOrder from './Components/PlaceOrder/PlaceOrder';
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
           <Route exact path='/inventory' >
             <Inventory></Inventory>
           </Route>
+          <Route exact path='/placeorder' >
+            <PlaceOrder></PlaceOrder>
+        </Route>
 
         </Switch>
      

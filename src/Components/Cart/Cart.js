@@ -43,6 +43,9 @@ const Cart = (props) => {
                        <p className='text-danger fw-bolder fs-4'>{orderTotal.toFixed(2)}</p>
                        
                     </div>
+                    <div className='text-center'>
+                        {props.children}
+                    </div>
 
                 </div>
                 </div>
